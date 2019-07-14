@@ -1,23 +1,6 @@
 
-/*
-   
-   Table Of Content
-   
-   1. Global Style
-   2. Preloader
-   5. Portfolio
-  12. Footer
-  13. Responsive
-  14. Scroll To Top
-  16. UiPasta Credit
- 
-
-*/
-
-
 
 /* Global Style */
-
 body {
     font-size: 16px;
     font-weight: 400;
@@ -63,7 +46,6 @@ img {
 }
 
 /* Preloader */
-
 #preloader {
     position: fixed;
     top: 0;
@@ -152,7 +134,6 @@ body.loaded #preloader{
 }
 
 /* Portfolio */
-
 .portfolio-inner .mix {
     display: none;
 }
@@ -252,7 +233,6 @@ ul.portfolio li.active {
 
 
 /* Footer */
-
 .footer-section {
     background: #000;
     padding: 80px 0px;
@@ -270,7 +250,6 @@ ul.portfolio li.active {
 
 
 /* Scroll To Top */
-
 .scroll-to-top {
     background-color: #24b662;
     display: none;
@@ -292,18 +271,3 @@ ul.portfolio li.active {
     color: #ffffff;
 }
 
-
-
-/* UiPasta Credit */
-
-.uipasta-credit {
-}
-
-.uipasta-credit a {
-    color: #24b662;
-    font-weight: 600;
-}
-
-.uipasta-credit a:hover {
-    color: #ffffff;
-}

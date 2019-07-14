@@ -1,14 +1,12 @@
 
 
-/*
-   
+/*  
    Table Of Content
    
    1. Preloader
    2. Scroll To Top
    3. Magnific Popup
  
-
 */
 
 
