@@ -133,12 +133,12 @@ body.loaded #preloader{
     }
 }
 
-/* Portfolio */
-.portfolio-inner .mix {
+/* products */
+.products-inner .mix {
     display: none;
 }
 
-ul.portfolio {
+ul.products {
     padding: 0;
     list-style: none;
     margin-top: 30px;
@@ -146,7 +146,7 @@ ul.portfolio {
     text-align: center;
 }
 
-ul.portfolio li {
+ul.products li {
     display: inline-block;
     padding: 8px 12px;
     margin: 0 8px;
@@ -159,12 +159,12 @@ ul.portfolio li {
     font-size: 13px;
 }
 
-ul.portfolio li:hover {
+ul.products li:hover {
     color: #000;
     border: none;
 }
 
-ul.portfolio li.active {
+ul.products li.active {
     color: #ffffff;
     background-color: #24b662;
     padding: 5px 20px;
@@ -172,12 +172,12 @@ ul.portfolio li.active {
     box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
 }
 
-.portfolio .item {
+.products .item {
     margin-top: 30px;
     position: relative;
 }
 
-.portfolio .item img {
+.products .item img {
     width: 100%;
 }
 
@@ -186,14 +186,14 @@ ul.portfolio li.active {
     transition: .3s;
 }
 
-.portfolio .item:hover a:before{
+.products .item:hover a:before{
   top: 40%;
   box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
   -webkit-transition: all 400ms ease-in-out;
           transition: all 400ms ease-in-out;
 }
 
-.portfolio .item a:before{
+.products .item a:before{
   color: #ffffff;
   content: "\f00e";
   font-family: "FontAwesome";
@@ -215,7 +215,7 @@ ul.portfolio li.active {
           transition: all 400ms ease-in-out;
 }
 
-.portfolio .item a:hover:before{
+.products .item a:hover:before{
   opacity: 1;
 }
 

@@ -39,7 +39,7 @@
 
         /* Magnific Popup */
 
-        $('.portfolio-popup').magnificPopup({
+        $('.products-popup').magnificPopup({
             type: 'image',
 
             gallery: { enabled: true },
@@ -50,10 +50,10 @@
             },
 
             image: {
-                markup: '<div class="mfp-figure portfolio-pop-up">' +
+                markup: '<div class="mfp-figure products-pop-up">' +
                     '<div class="mfp-close"></div>' +
                     '<div class="mfp-img"></div>' +
-                    '<div class="mfp-bottom-bar portfolio_title">' +
+                    '<div class="mfp-bottom-bar products_title">' +
                     '<div class="mfp-title"></div>' +
                     '<div class="mfp-counter"></div>' +
                     '</div>' +
