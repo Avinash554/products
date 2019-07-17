@@ -13,9 +13,9 @@ Done as part of coding challenge
 
 6. Added Accessibility (i use NVDA Screen Reader)and SEO (Search Engine Optimization)
 
-7. Added preloader and there top arrow to scroll top from the web page
+7. Added preloader and there is a top arrow to scroll top from the bottom of web page
 
-7. The project structure all the css files under css folder, images under image folder, js files under js folder and index.html
+7. The project structure is like all the css files under css folder, images under image folder, js files under js folder and index.html
 
 ## Deployed Environment
 
