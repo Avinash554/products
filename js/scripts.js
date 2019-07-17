@@ -15,7 +15,7 @@
 
     jQuery(document).ready(function () {
 
-        //Made a service call getting 403 so i added below products object
+        /* Made a service call getting 403 so i added below products object */
 
         //         const url = 'https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json';
         //   var xhttp = new XMLHttpRequest();
@@ -621,7 +621,7 @@
 
             row.innerHTML += `<div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="item" id=${each_group.id}>
-                                <a tabindex="0" href="" class="products-popup" class="products-popup" title="Project Title" id=${index}>
+                                <a href="" class="products-popup" class="products-popup" title=${each_group.id} id=${index} tabindex="0">
                                     <img src=${each_group.hero.href} alt=${each_group.hero.alt} height=${each_group.hero.height} width=${each_group.hero.width}>
                                 </a>
                                 <div tabindex="0">${each_group.name}</div>
@@ -635,20 +635,22 @@
             return false;
         });
 
+        /* Magnific Popup */
+
         $(document).on("click", '.products-popup', function (e) {
             e.preventDefault();
             var selected_img_url = $("#" + this.id + ' img').attr("src");
             $("#" + this.id).magnificPopup({
+                type: 'image', // this is a default type
+                gallery: {
+                    enabled: true
+                },
                 items: [
                     {
                         src: selected_img_url,
                         // title:selected_product_name
                     }
-                ],
-                gallery: {
-                    enabled: true
-                },
-                type: 'image' // this is a default type
+                ]
             }).magnificPopup('open');
             return false;
 
