@@ -1,5 +1,27 @@
 
-
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 /* Global Style */
 body {
     font-size: 16px;
@@ -138,6 +160,11 @@ body.loaded #preloader{
     display: none;
 }
 
+.products-title{
+    text-align: center;
+    margin-left:200px;
+    margin-right:200px;
+}
 ul.products {
     padding: 0;
     list-style: none;
@@ -238,15 +265,6 @@ ul.products li.active {
     padding: 80px 0px;
     color: #f8f8f8;
 }
-
-.footer-section p {
-    font-size: 14px;
-}
-
-.footer-section a {
-    color: #ffffff;
-}
-
 
 
 /* Scroll To Top */

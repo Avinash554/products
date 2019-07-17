@@ -14,6 +14,22 @@
     'use strict';
 
     jQuery(document).ready(function () {
+
+        //Made a service call getting 403 so i added below products object
+
+        //         const url = 'https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json';
+        //   var xhttp = new XMLHttpRequest();
+        //   xhttp.onreadystatechange = function () {
+        //     if (this.readyState == 4 && this.status == 200) {
+        //       const response = xhttp.responseText;
+        //       console.log(' --- http response ', response);
+        //     }
+        //   };
+        //   xhttp.open("GET", "https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json");
+        //   xhttp.responseType = 'json';
+        //   xhttp.setRequestHeader('Access-Control-Allow-Headers', '*');
+        //   xhttp.send();
+
         const productsObject = {
             "id": "shop/new/all-new",
             "name": "All New",
@@ -576,6 +592,7 @@
             "totalPages": 50,
             "categories": []
         };
+
         /* Preloader */
         $(window).on('load', function () {
             $('body').addClass('loaded');
@@ -620,36 +637,24 @@
             return false;
         });
 
+        // $('.products-popup').on('click', function () {
+        //     productsObject.groups.forEach((each_group, index) => {
 
-
-        /* Magnific Popup */
+        //         console.log(each_group.hero.href);
+        //     });
+        //     console.log(' -- ', this.outerHTML);
+        // })
 
         $('.products-popup').magnificPopup({
-            type: 'image',
-
-            gallery: { enabled: true },
-            zoom: {
-                enabled: true,
-                duration: 500
-
-            },
-
-            image: {
-                markup: '<div class="mfp-figure products-pop-up">' +
-                    '<div class="mfp-close"></div>' +
-                    '<div class="mfp-img"></div>' +
-                    '<div class="mfp-bottom-bar products_title">' +
-                    '<div class="mfp-title"></div>' +
-                    '<div class="mfp-counter"></div>' +
-                    '</div>' +
-                    '</div>',
-
-                titleSrc: function (item) {
-                    return item.el.attr('title');
+            items: [
+                {
+                    src: 'https://www.westelm.com/weimgs/rk/images/wcm/products/201924/0034/tencel-crescent-stitch-quilt-shams-stone-white-m.jpg'
                 }
-            }
-
-
+            ],
+            gallery: {
+                enabled: true
+            },
+            type: 'image' // this is a default type
         });
     });
 })(jQuery);
