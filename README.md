@@ -1,4 +1,4 @@
-# products
+## Description for what i have done
 Done as part of coding challenge
 
 1. Pushed code to github:  https://github.com/Avinash554/products and one can clone the code from https://github.com/Avinash554/products.git
@@ -24,8 +24,6 @@ Done as part of coding challenge
 11. The project structure is like all the css files under css folder, images under image folder, js files under js folder and index.html
 
 12. Coming to the unit testing i worked in Angular and wrote unit tests using jasmine, karma and also consumer contract testing and verified using pact-broker between frontend and middleware.
-
-
 
 ## Deployed Environment
 
