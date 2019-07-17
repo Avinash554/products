@@ -621,15 +621,13 @@
 
             row.innerHTML += `<div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="item" id=${each_group.id}>
-                                <a href="" class="products-popup" class="products-popup" title="Project Title" id=${index}>
+                                <a tabindex="0" href="" class="products-popup" class="products-popup" title="Project Title" id=${index}>
                                     <img src=${each_group.hero.href} alt=${each_group.hero.alt} height=${each_group.hero.height} width=${each_group.hero.width}>
                                 </a>
-                                <div>${each_group.name}</div>
-                                ${priceComponent}
+                                <div tabindex="0">${each_group.name}</div>
+                                <div tabindex="0">${priceComponent}</div>
                             </div>
                         </div>`;
-
-
         });
 
         $('.scroll-to-top').click(function () {
@@ -637,24 +635,23 @@
             return false;
         });
 
-        // $('.products-popup').on('click', function () {
-        //     productsObject.groups.forEach((each_group, index) => {
+        $(document).on("click", '.products-popup', function (e) {
+            e.preventDefault();
+            var selected_img_url = $("#" + this.id + ' img').attr("src");
+            $("#" + this.id).magnificPopup({
+                items: [
+                    {
+                        src: selected_img_url,
+                        // title:selected_product_name
+                    }
+                ],
+                gallery: {
+                    enabled: true
+                },
+                type: 'image' // this is a default type
+            }).magnificPopup('open');
+            return false;
 
-        //         console.log(each_group.hero.href);
-        //     });
-        //     console.log(' -- ', this.outerHTML);
-        // })
-
-        $('.products-popup').magnificPopup({
-            items: [
-                {
-                    src: 'https://www.westelm.com/weimgs/rk/images/wcm/products/201924/0034/tencel-crescent-stitch-quilt-shams-stone-white-m.jpg'
-                }
-            ],
-            gallery: {
-                enabled: true
-            },
-            type: 'image' // this is a default type
         });
     });
 })(jQuery);
