@@ -653,7 +653,6 @@
                 ]
             }).magnificPopup('open');
             return false;
-
         });
     });
 })(jQuery);
